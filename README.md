@@ -17,7 +17,42 @@ $ composer require --dev localheinz/faker-provider
 
 ## Usage
 
-:bulb: This is a great place for showing a few usage examples!
+Once you have created an instance of `Faker\Generator`, providers can be added like this:
+
+```php
+use Faker\Factory;
+use Localheinz\Faker\Provider;
+
+$faker = Factory::create();
+
+$faker->addProvider(new Provider\AvatarUrlProvider($faker));
+```
+
+## Providers
+
+This package provides the following providers for use with [`fzaninotto/faker`](https://github.com/fzaninotto/Faker):
+
+* [`Localheinz\Faker\Provider\AvatarUrlProvider`](https://github.com/localheinz/faker-provider#avatarurlprovider)
+
+### `AvatarUrlProvider`
+
+```php
+use Faker\Generator;
+use Localheinz\Faker\Provider;
+
+$userName = $faker->userName;
+$size = $faker->numberBetween(100, 450);
+
+/** @var Generator&Provider\AvatarUrlProvider $faker */
+$avatarUrl = $faker->adorableAvatarUrl(
+    $userName,
+    $size
+);
+```
+
+![Example of ](https://api.adorable.io/avatars/150/localheinz.png)
+
+Also see [avatars.adorable.io](http://avatars.adorable.io/).
 
 ## Changelog
 

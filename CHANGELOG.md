@@ -6,28 +6,8 @@ The format is based on [Keep a Changelog](https://keepachangelog.com/en/1.0.0/),
 
 ## Unreleased
 
-For a full diff see [`1902cc2...master`](https://github.com/localheinz/faker-provider/compare/1902cc2...master).
+For a full diff see [`b2e46fd...master`](https://github.com/localheinz/faker-provider/compare/b2e46fd...master).
 
 ### Added
 
-* Added something ([#9000](https://github.com/localheinz/faker-provider/pulls/9000)), by [@localheinz](https://github.com/localheinz)
-
-### Changed
-
-*
-
-### Deprecated
-
-*
-
-### Removed
-
-*
-
-### Fixed
-
-*
-
-### Security
-
-*
+* Added `AvatarUrlProvider` which initally allows creating URLs to [avatars.adorable.io](http://avatars.adorable.io) avatars([#1](https://github.com/localheinz/faker-provider/pulls/1)), by [@localheinz](https://github.com/localheinz)

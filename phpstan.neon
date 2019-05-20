@@ -6,6 +6,8 @@ includes:
 	- vendor/phpstan/phpstan/conf/config.levelmax.neon
 
 parameters:
+	classesAllowedToBeExtended:
+		- Faker\Provider\Base
 	paths:
 		- src
 		- test
